@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.singlescreenapp.MainActivity"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/logo"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:id="@+id/future"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Future Cars Co."
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:layout_below="@+id/logo"/>
+
+            <TextView
+                android:id="@+id/motto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/future"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text='"Lets Build A Better Future"'
+                android:textColor="?attr/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/addressA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/motto"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:text="Address :"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/addressA"
+                android:layout_below="@+id/addressA"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:text="No. 7, Kuala Lumpur, Malaysia"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Address"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:text="Phone Number :"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/phone"
+                android:layout_below="@+id/phone"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:text="+6039234456 (Office)\n+60178984563 (Mobile)"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/operation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/number"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:text="Operation Hour :"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/operation"
+                android:layout_below="@+id/operation"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:text="Mon - Fri : 9am - 5 pm \nPublic Holiday : Closed"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
